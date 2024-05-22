@@ -124,8 +124,9 @@ async function service() {
             }
         }
         else {
-            console.log("Sorry we have not found your account in our database, Kindly contact your branch!!");
-            console.log("\nThankyou for using MY BANK OOP Online Banking, Godbye!!!");
+            console.log(chalk.red.italic("\nSorry!! we have not found your account in our database, Kindly contact your branch!!"));
+            console.log(chalk.greenBright.italic("Thankyou for using MY BANK OOP Online Banking, Godbye!!!"));
+            return;
         }
     } while (true);
 }
